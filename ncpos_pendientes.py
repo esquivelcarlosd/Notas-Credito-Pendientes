@@ -133,11 +133,7 @@ def obtener_nombres(ano, mes):
             print(archivo)
             lista.append(archivo)
             continue       
-        elif numbers in clientesNancy:
-            archivo = archivo + "\tNancy Cardoso\t" + mesDos + "\t" + anoDos
-            print(archivo)
-            lista.append(archivo)            
-            continue
+
            
         elif numbers in empleadoCinco:
             archivo = archivo + "\templeadoCinco\t" + mesDos + "\t" + anoDos
