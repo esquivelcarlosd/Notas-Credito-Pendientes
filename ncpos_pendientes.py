@@ -16,9 +16,8 @@ nombre = ""
 lista = []
 
 #Ruta global
-#C:\Users\MXCAESQ\OneDrive - ABB\Documentos\Notas de crédito\Pago oportuno
-#"/ABB/Customer Support - Documentos/Notas de crédito/Pago oportuno/
-ruta = "C:/Users/"+ user + "/OneDrive - ABB/Documentos/Notas de crédito/Pago oportuno/" #NCPO 2020/abril 2020/1 Pending"
+
+ruta = "C:/Users/"
 #Carpetas globales
 carpeta2019 = "NCPO 2019/"
 carpeta2020 = "NCPO 2020/"
@@ -72,14 +71,12 @@ diciembre2022 = "TPCM diciembre 2022/1 Pending"
 
 
 #CLIENTES
-#BRYAN
 
-clientesBryan = ['20000522', '20000169', '20000525', '20000561','20000133', '20000176', '20000285', '20000231', '20000096', '20000374', '20000701', '20000711', '20001061', '20000175', '20000004', '20000107', '20000432', '20001308', '20001328', '20002464', '20000959', '20000278', '20000596', '20003422', '20001442']
-clientesDaniel = ['20000048', '20001441', '20001969', '20000296', '20000248', '20002343', '20001313', '20000161', '20000244', '20001282', '20000078', '20001545', '20001836', '20000198', '20002005', '20002264', '20002693', '20001068', '20003231', '20001186', '20002582', '20003126', '20002908', '20001072', '20001082', '20001425', '20000087', '20002725', '20001420', '20000548', '20003010']
-clientesFer = ['20001777', '20002467']
-clientesGabo = ['20000052', '20000330', '300002070', '20001310', '20000223', '20001045', '20000854', '20002515', '20000457', '20000313', '20003085', '20002671', '20002428', '20002328', '20002550', '20001757', '20002487', '20000126', '20000535', '20002370']
-clientesNancy = ['20001869', '20000206', '20000116', '20002102', '20002589', '20001404', '20000609', '20000483', '20000171', '20000139', '20000584', '20000752', '20003132', '20000339']
-clientesNidi = ['20000230', '20000093', '20000912', '20000088', '20000317', '20000178', '20001079', '20000442', '20001436', '20000197', '20000559', '20000114', '20001084', '20001860', '20000526', '20000514', '20003035', '20002940', '20000491']
+empleadoUno = []
+empleadoDos = []
+empleadoTres = []
+empleadoCuatro = []
+empleadoCinco = []
 
 """f = open('temp.txt')
 t = open('tempT.txt','w+')
@@ -116,23 +113,23 @@ def obtener_nombres(ano, mes):
         #mesDos = mes[0:8]
         anoDos = ano[5:9]
         #print(type(numbers))
-        if numbers in clientesBryan:
-            archivo = archivo + "\tBryan Herrera\t" + mesDos + "\t" + anoDos
+        if numbers in empleadoUno:
+            archivo = archivo + "\templeadoUno\t" + mesDos + "\t" + anoDos
             print(archivo)
             lista.append(archivo)
             continue
-        elif numbers in clientesDaniel:
-            archivo = archivo + "\tDaniel Vasquez\t" + mesDos + "\t" + anoDos
+        elif numbers in empleadoDos:
+            archivo = archivo + "\templeadoDos\t" + mesDos + "\t" + anoDos
             print(archivo)
             lista.append(archivo)
             continue
-        elif numbers in clientesFer:
-            archivo = archivo + "\tFernando López\t" + mesDos + "\t" + anoDos
+        elif numbers in empleadoTres:
+            archivo = archivo + "\templeadoTres\t" + mesDos + "\t" + anoDos
             print(archivo)
             lista.append(archivo)
             continue
-        elif numbers in clientesGabo:
-            archivo = archivo + "\tGabriel Jimenez\t" + mesDos + "\t" + anoDos
+        elif numbers in empleadoCuatro:
+            archivo = archivo + "\templeadoCuatro\t" + mesDos + "\t" + anoDos
             print(archivo)
             lista.append(archivo)
             continue       
@@ -142,8 +139,8 @@ def obtener_nombres(ano, mes):
             lista.append(archivo)            
             continue
            
-        elif numbers in clientesNidi:
-            archivo = archivo + "\tNidia Navarrete\t" + mesDos + "\t" + anoDos
+        elif numbers in empleadoCinco:
+            archivo = archivo + "\templeadoCinco\t" + mesDos + "\t" + anoDos
             print(archivo)
             lista.append(archivo)
             continue        
@@ -263,17 +260,7 @@ def complete_process():
 
 
 def header():
-    print('\n\n')
-    print('        *** ***          ******* ***        ******* ***     ')
-    print('       **** ****         ******* ******     ******* *****   ')
-    print('       **** *****        ******* ******     ******* ******  ')
-    print('      ***** ******       ******* *****      ******* *****   ')
-    print('     ****** *******      ******* ******     ******* ******  ')
-    print('    ******* *******      ******* ********   ******* ******* ')
-    print('   ******** *********    ******* ********   ******* ********')
-    print('  ******        ******   ******* ********   ******* ******* ')
-    print(' ******          ******  ******* ******     ******* ******  ')
-    print('\n\n—')
+
     print("     PROGRAMA PARA MOSTRAR LAS NCPO'S PENDIENTES\n\n\n")
     
 def clear_screen():
